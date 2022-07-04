@@ -1,0 +1,602 @@
+/* ======= Import base files ======= */
+/* ======= Import core files ======= */
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&family=Bai+Jamjuree:wght@400;700&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Josefin+Sans:wght@300;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@400;700&family=Libre+Franklin:ital,wght@0,300;0,700;1,600&family=Manrope:wght@500;700&family=Open+Sans:wght@300;400;700&family=Outfit:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100;300;500&family=Rubik:wght@400;500;700&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+/* ======= Import layout files ======= */
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  background-color: #c5e4e7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  text-align: center;
+  margin: 3rem;
+}
+
+.calculator_left {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.calculator_box {
+  background-color: white;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+}
+
+.calculator_bill {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.calculator .bill {
+  text-transform: capitalize;
+}
+
+.calculator_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.calculator_people {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 1rem;
+}
+
+.calculator_right {
+  padding: 1.2rem;
+  background-color: #00494d;
+  border-radius: 1rem;
+}
+
+.calculator-result_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator_reset {
+  width: 100%;
+  display: block;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.calculator_reset:hover {
+  background-color: #26c0abb0;
+}
+
+.calculator-result_per-person p {
+  color: white;
+  text-transform: capitalize;
+}
+
+.calculator-result_per-person p span {
+  display: block;
+  font-size: 1rem;
+  color: #7f9c9f;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.bill_input {
+  background: url(../images/icon-dollar.svg) no-repeat left 1rem center;
+  background-color: #f4fafa;
+}
+
+.--calc-label {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #5e7a7d;
+  margin-bottom: 0.5rem;
+}
+
+.tip_btn {
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  background-color: #00494d;
+  font-size: 1.7rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.tip_btn.active {
+  color: #00494d;
+  background-color: #26c0ab;
+}
+
+.tip_btn:hover {
+  background-color: #26c0abb0;
+  color: #00494d;
+}
+
+.custom_input {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  background-color: #f4fafa;
+  color: #00494d80;
+  border: 3px solid transparent;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.custom_input:focus {
+  color: #00494d;
+}
+
+::-webkit-input-placeholder {
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder {
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder {
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+.people_input {
+  background: url(../images/icon-person.svg) no-repeat left 1rem center;
+  margin-bottom: 1rem;
+}
+
+.--main-tip {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #26c0ab;
+}
+
+.--main-input {
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: #f4fafa;
+  color: #00494d80;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.--main-input:focus {
+  color: #00494d;
+}
+
+:focus {
+  outline: none;
+  caret-color: #26c0ab;
+}
+
+.valid {
+  border: 3px solid #26c0ab;
+}
+
+.invalid {
+  border: 3px solid #e23023;
+  caret-color: #e23023;
+}
+
+.label_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.label_wrapper .error {
+  color: #e23023;
+  font-size: 1.5rem;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.label_wrapper .error.active {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  body {
+    height: 0;
+  }
+  .logo {
+    margin-top: 6rem;
+  }
+  .calculator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 70vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .calculator_box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width: 65rem;
+    padding: 2rem;
+  }
+  .calculator_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .calculator_wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .--main-tip {
+    font-size: 3rem;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

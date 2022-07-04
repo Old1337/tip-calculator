@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Sass/main.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="logo">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      <div class="calculator">
+        <div class="calculator_box">
+          <div class="calculator_left">
+            <div class="calculator_bill">
+              <label class="--calc-label" for="bill">bill</label>
+              <input
+                class="bill_input --main-input"
+                type="number"
+                value="0"
+                id="bill"
+                name="bill"
+                min="0"
+                max="999999"
+              />
+            </div>
+            <div class="calculator_tip">
+              <p class="tip --calc-label">select tip %</p>
+              <div class="calculator_wrapper">
+                <button class="tip_btn" data-tip="5">5%</button>
+                <button class="tip_btn" data-tip="10">10%</button>
+                <button class="tip_btn" data-tip="15">15%</button>
+                <button class="tip_btn" data-tip="25">25%</button>
+                <button class="tip_btn" data-tip="50">50%</button>
+                <input
+                  class="custom_input"
+                  type="number"
+                  id="tip"
+                  placeholder="Custom"
+                  name="tip"
+                  min="0"
+                  max="999999"
+                />
+              </div>
+            </div>
+            <div class="calculator_people">
+              <div class="label_wrapper">
+                <label class="--calc-label" for="people"
+                  >number of people</label
+                >
+                <span class="error">Can't be zero</span>
+              </div>
+              <input
+                class="--main-input people_input"
+                type="number"
+                value="0"
+                id="people"
+                name="people"
+                min="0"
+                max="999999"
+              />
+            </div>
+          </div>
+          <div class="calculator_right">
+            <div class="calculator-result">
+              <div class="calculator-result_text">
+                <div class="calculator-result_per-person">
+                  <p>tip amount <span>/ person</span></p>
+                </div>
+                <p class="tip_per_person --main-tip">$4.27</p>
+              </div>
+              <div class="calculator-result_text">
+                <div class="calculator-result_per-person">
+                  <p>total <span>/ person</span></p>
+                </div>
+                <p class="tip_total --main-tip">$32.79</p>
+              </div>
+            </div>
+            <button class="calculator_reset">reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="Javascript/main.js" type="module"></script>
+  </body>
+</html>

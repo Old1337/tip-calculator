@@ -1,0 +1,185 @@
+.logo {
+  text-align: center;
+  margin: 3rem;
+}
+
+.calculator {
+  &_left {
+    display: grid;
+    gap: 1.5rem;
+  }
+  &_box {
+    background-color: $calc-bg-color;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+  }
+  &_bill {
+    display: grid;
+    gap: 0.3rem;
+  }
+  .bill {
+    text-transform: capitalize;
+  }
+  &_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  &_people {
+    display: grid;
+    margin-top: 1rem;
+  }
+
+  &_right {
+    padding: 1.2rem;
+    background-color: $btn-color;
+    border-radius: 1rem;
+  }
+  &-result_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_reset {
+    width: 100%;
+    display: block;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: $primary-color;
+    color: $btn-color;
+    cursor: pointer;
+    transition: $primary-transition;
+
+    &:hover {
+      background-color: #26c0abb0;
+    }
+  }
+  &-result_per-person {
+    & p {
+      color: $calc-bg-color;
+      text-transform: capitalize;
+
+      & span {
+        display: block;
+        font-size: 1rem;
+        color: $color-2;
+        font-weight: bold;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.bill_input {
+  background: url(../images/icon-dollar.svg) no-repeat left 1rem center;
+  background-color: $color-4;
+}
+.--calc-label {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: $label-color;
+  margin-bottom: 0.5rem;
+}
+
+.tip_btn {
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  background-color: $btn-color;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: $primary-transition;
+
+  &.active {
+    color: $btn-color;
+    background-color: $primary-color;
+  }
+  &:hover {
+    background-color: #26c0abb0;
+    color: $btn-color;
+  }
+}
+
+.custom_input {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  background-color: $color-4;
+  color: #00494d80;
+  border: 3px solid transparent;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  transition: $primary-transition;
+
+  &:focus {
+    color: $btn-color;
+  }
+}
+
+::placeholder {
+  color: $label-color;
+  font-weight: bold;
+}
+
+.people_input {
+  background: url(../images/icon-person.svg) no-repeat left 1rem center;
+  margin-bottom: 1rem;
+}
+
+.--main-tip {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: $primary-color;
+}
+
+.--main-input {
+  border: 3px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: $color-4;
+  color: #00494d80;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  transition: $primary-transition;
+
+  &:focus {
+    color: $btn-color;
+  }
+}
+
+:focus {
+  outline: none;
+  caret-color: $primary-color;
+}
+
+.valid {
+  border: 3px solid $primary-color;
+}
+.invalid {
+  border: 3px solid #e23023;
+
+  caret-color: #e23023;
+}
+
+.label_wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  & .error {
+    color: #e23023;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: $primary-transition;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
