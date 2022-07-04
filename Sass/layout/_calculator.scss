@@ -22,7 +22,7 @@
   }
   &_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(180px, 500px));
     gap: 0.8rem;
   }
   &_people {

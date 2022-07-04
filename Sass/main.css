@@ -353,8 +353,8 @@ a {
 .calculator_wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(180px, 500px))[2];
+      grid-template-columns: repeat(2, minmax(180px, 500px));
   gap: 0.8rem;
 }
 
@@ -591,8 +591,8 @@ a {
             justify-content: space-between;
   }
   .calculator_wrapper {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: (150px)[3];
+        grid-template-columns: repeat(3, 150px);
   }
   .--main-tip {
     font-size: 3rem;
